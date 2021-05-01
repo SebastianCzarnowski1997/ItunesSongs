@@ -1,0 +1,128 @@
+.container {
+    position: absolute;
+    top: 7vh;
+    background-color: #363636;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.inputContainer input {
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    width: 30vh;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.inputContainer input:focus {
+    outline: none !important;
+}
+
+.inputContainer input::placeholder {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.inputContainer button {
+    background-color: transparent;
+    padding: 2px 10px;
+    color: #DEF2F1;
+    border: 2px solid #DEF2F1;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+.inputContainer button:hover {
+    cursor: pointer;
+}
+
+.album {
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.albumContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    color: white;
+    width: 17%;
+    height: 35vh;
+    border: 1px solid #ffffff;
+    margin: 40px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all .5s ease-out;
+}
+
+.albumContainer h3 {
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.albumContainer::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 0px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 0px solid #ffffff;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: #363636;
+}
+
+.albumContainer .link {
+    background-color: transparent;
+    padding: 2px 10px;
+    color: #DEF2F1;
+    border: 1px solid #DEF2F1;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 1.5s;
+    font-size: 15px;
+}
+
+@media (max-width: 1100px) {
+    .inputContainer input::placeholder {
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .albumContainer {
+        width: 97%;
+        height: 40vh;
+        margin: 30px 10px;
+        font-size: 14px;
+        justify-content: space-evenly;
+    }
+}
