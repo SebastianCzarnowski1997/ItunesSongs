@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const AlbumListByName = () => {
     const [searchNames, setSearchNames] = useState("")
-    const [searchNamesAfterClick, setSearchNamesAfterClick] = useState("coldplay")
+    const [searchNamesAfterClick, setSearchNamesAfterClick] = useState("")
     const dispatch = useDispatch();
     const albumList = useSelector(state => state.AlbumListByName); // albums meeting the criteria
 
@@ -30,7 +30,7 @@ const AlbumListByName = () => {
             return (
                 <div className="container">
                     <div className="inputContainer">
-                        <input type="text" placeholder="Wpisz nazwę lub album" onChange={(e) => setSearchNames(e.target.value)}/>
+                        <input type="text" placeholder="Wpisz artystę lub album" onChange={(e) => setSearchNames(e.target.value)}/>
                         <button onClick={() => setSearchNamesAfterClick(searchNames)}>Wyszukaj</button>
                     </div>
                     <div className="album">
