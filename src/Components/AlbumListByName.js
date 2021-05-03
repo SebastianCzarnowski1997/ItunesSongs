@@ -13,7 +13,7 @@ const AlbumListByName = () => {
     const albumList = useSelector(state => state.AlbumListByName); // albums meeting the criteria
 
     // fetching data to get all the albums that match what user types
-
+ 
     React.useEffect(() => {
         FetchData()
     }, [searchNamesAfterClick])
